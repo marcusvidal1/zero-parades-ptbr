@@ -27,10 +27,13 @@ Os textos ficam no bundle `ZeroParades_Data/StreamingAssets/aa/StandaloneWindows
 
 ## Instalador para usuários (`pacote/`)
 
-`instalador_ptbr.py` acha o jogo pelas bibliotecas da Steam, confere o SHA-256 do bundle original (recusa outra versão do jogo), faz backup em `%LOCALAPPDATA%\ZeroParades-Traducao-PTBR`, aplica `dados/traducao-ptbr.json` na tabela `es_mx` e zera o CRC no catálogo. Para gerar o `.exe`:
+`instalador_ptbr.py` acha o jogo pelas bibliotecas da Steam, confere o SHA-256 do bundle original (recusa outra versão do jogo), faz backup em `%LOCALAPPDATA%\ZeroParades-Traducao-PTBR`, aplica `dados/traducao-ptbr.json` na tabela `es_mx` e zera o CRC no catálogo.
 
-```
-python -m PyInstaller --onefile --console --name Instalar-Traducao-PTBR --collect-all UnityPy pacote/instalador_ptbr.py
-```
+Desde a 1.0.1 o pacote não tem `.exe` próprio (o da 1.0.0, feito com PyInstaller, dava falso positivo em antivírus). Ele leva, numa pasta `runtime\`:
+- o Python portátil oficial `python-3.12.10-embed-amd64.zip` (python.org, assinado pela Python Software Foundation);
+- em `runtime\Lib\site-packages`, as bibliotecas usadas: `UnityPy`, `PIL`, `lz4`, `brotli.py` + `_brotli*.pyd`, `fsspec`, `attr`, `attrs`;
+- `runtime\python312._pth` com as linhas `python312.zip`, `.` e `Lib\site-packages`.
+
+Os atalhos `.cmd` rodam `runtime\python.exe -X utf8 instalador_ptbr.py instalar|remover`. O zip leva `INSTALAR-TRADUCAO.cmd`, `REMOVER-TRADUCAO.cmd`, `LEIA-ME.txt`, `instalador_ptbr.py`, `dados\` e `runtime\`.
 
 Quando a Steam atualizar o jogo: rode o `extract.py` no bundle novo, ajuste `BUNDLE`, `BUNDLE_ORIGINAL_SHA256` e `BUILD_STEAM` no instalador, refaça o build e exporte de novo `pacote/dados/traducao-ptbr.json` a partir do bundle montado.

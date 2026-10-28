@@ -1,3 +1,3 @@
 @echo off
 cd /d "%~dp0"
-"Instalar-Traducao-PTBR.exe" remover
+"runtime\python.exe" -X utf8 instalador_ptbr.py remover

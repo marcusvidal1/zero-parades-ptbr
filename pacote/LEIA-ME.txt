@@ -1,5 +1,5 @@
 ZERO PARADES: Director's Cut - Tradução Português (Brasil)
-Versão 1.0.0
+Versão 1.0.1
 
 Tradução completa do jogo (73.708 textos): diálogos, pensamentos, missões, itens,
 menus e configurações.
@@ -24,10 +24,13 @@ COMO REMOVER
 
 Se o jogo não estiver numa biblioteca padrão da Steam, o instalador pergunta a pasta.
 Você também pode informar direto, por exemplo:
-  Instalar-Traducao-PTBR.exe instalar --jogo "D:\SteamLibrary\steamapps\common\Zero Parades"
+  runtime\python.exe -X utf8 instalador_ptbr.py instalar --jogo "D:\SteamLibrary\steamapps\common\Zero Parades"
 
 O QUE O INSTALADOR FAZ
 - Não baixa nada da internet e não envia nada.
+- Não tem .exe próprio: usa o Python portátil oficial (pasta runtime, baixado de
+  python.org e assinado digitalmente pela Python Software Foundation) para rodar o
+  script instalador_ptbr.py, que é texto aberto e pode ser lido por qualquer um.
 - Faz backup antes de mudar qualquer arquivo, em:
   %LOCALAPPDATA%\ZeroParades-Traducao-PTBR
   Não apague essa pasta enquanto a tradução estiver instalada.
@@ -39,8 +42,8 @@ O QUE O INSTALADOR FAZ
 SE ALGO DER ERRADO
 - Rode REMOVER-TRADUCAO.cmd, ou use na Steam: Propriedades > Arquivos instalados >
   Verificar integridade dos arquivos. Isso volta tudo ao original.
-- Se o Windows bloquear o .exe (SmartScreen), clique em "Mais informações" >
-  "Executar assim mesmo".
+- Se o Windows avisar ao abrir o .cmd, clique em "Mais informações" > "Executar
+  assim mesmo" (ou em "Executar").
 
 OBSERVAÇÕES
 - Nomes de personagens, lugares e títulos de músicas foram mantidos como no original.

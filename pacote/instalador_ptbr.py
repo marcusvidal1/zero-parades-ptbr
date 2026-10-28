@@ -3,11 +3,13 @@
 Aplica o texto traduzido (dados/traducao-ptbr.json) no arquivo de textos do proprio jogo, no lugar do
 Espanhol. Faz backup antes e permite remover. Nao baixa nada nem usa internet.
 
-Uso: Instalar-Traducao-PTBR.exe [instalar|remover] [--jogo "C:\\...\\Zero Parades"]
+Uso: runtime\\python.exe -X utf8 instalador_ptbr.py [instalar|remover] [--jogo "C:\\...\\Zero Parades"]
+Os atalhos INSTALAR-TRADUCAO.cmd e REMOVER-TRADUCAO.cmd fazem isso. runtime\\ e o Python portatil oficial
+(python.org, assinado pela Python Software Foundation) com as bibliotecas UnityPy, Pillow, lz4, brotli, fsspec e attrs.
 Sem argumentos, mostra um menu."""
 import hashlib, json, os, shutil, struct, sys, traceback
 
-VERSAO_PACOTE = "1.0.0"
+VERSAO_PACOTE = "1.0.1"
 BUILD_STEAM = "25778956"  # buildid da Steam em que a traducao foi testada
 BUNDLE = "g5ibkj7vdwf2g67g_assets_all_7de35702cafaf3b47f772481acd859f2.bundle"
 BUNDLE_ORIGINAL_SHA256 = "dcca208d631a088d3afcc0c94f77c0e7aabab866aa7fc181ea967dd63de2a88d"
