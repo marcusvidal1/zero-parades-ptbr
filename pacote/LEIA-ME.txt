@@ -1,0 +1,50 @@
+ZERO PARADES: Director's Cut - Tradução Português (Brasil)
+Versão 1.0.0
+
+Tradução completa do jogo (73.708 textos): diálogos, pensamentos, missões, itens,
+menus e configurações.
+
+COMPATIBILIDADE
+- Versão Steam do jogo (build 25778956).
+- O instalador confere se o arquivo de textos do jogo é exatamente o desta versão.
+  Se a Steam atualizar o jogo, ou se houver outro mod mexendo nos textos, ele avisa
+  e não altera nada.
+
+COMO INSTALAR
+1. Extraia o ZIP inteiro numa pasta normal (não rode de dentro do ZIP).
+2. Feche o jogo.
+3. Dê dois cliques em INSTALAR-TRADUCAO.cmd.
+4. Espere a mensagem INSTALACAO CONCLUIDA (leva 1 ou 2 minutos).
+5. Abra o jogo, vá em Configurações > Idioma e escolha "Español".
+   Depois de escolhida, a opção passa a aparecer como "Português (BR)".
+
+COMO REMOVER
+1. Feche o jogo.
+2. Dê dois cliques em REMOVER-TRADUCAO.cmd.
+
+Se o jogo não estiver numa biblioteca padrão da Steam, o instalador pergunta a pasta.
+Você também pode informar direto, por exemplo:
+  Instalar-Traducao-PTBR.exe instalar --jogo "D:\SteamLibrary\steamapps\common\Zero Parades"
+
+O QUE O INSTALADOR FAZ
+- Não baixa nada da internet e não envia nada.
+- Faz backup antes de mudar qualquer arquivo, em:
+  %LOCALAPPDATA%\ZeroParades-Traducao-PTBR
+  Não apague essa pasta enquanto a tradução estiver instalada.
+- Altera só dois arquivos do jogo: o pacote de textos (a tradução entra no lugar do
+  Espanhol) e o catalog.bin (para o jogo aceitar o pacote alterado).
+- O pacote de mod NÃO traz arquivos do jogo: ele aplica o texto traduzido no arquivo
+  que já está no seu computador.
+
+SE ALGO DER ERRADO
+- Rode REMOVER-TRADUCAO.cmd, ou use na Steam: Propriedades > Arquivos instalados >
+  Verificar integridade dos arquivos. Isso volta tudo ao original.
+- Se o Windows bloquear o .exe (SmartScreen), clique em "Mais informações" >
+  "Executar assim mesmo".
+
+OBSERVAÇÕES
+- Nomes de personagens, lugares e títulos de músicas foram mantidos como no original.
+- Algumas letras maiúsculas acentuadas (Ã, Ç, Â, Ô) podem aparecer com outra fonte,
+  porque a fonte do jogo não tem esses caracteres.
+- Tradução de fã, sem relação com a ZA/UM. Feita com auxílio de IA (Claude e
+  ChatGPT) e revisada.

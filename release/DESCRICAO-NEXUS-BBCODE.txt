@@ -1,0 +1,38 @@
+[size=5][b]ZERO PARADES - Tradução Português (Brasil)[/b][/size]
+
+Tradução completa de [b]ZERO PARADES: Director's Cut[/b] para o português do Brasil: diálogos, pensamentos, missões, itens, menus e configurações ([b]73.708 textos[/b]).
+
+[size=4][b]Destaques[/b][/size]
+[list]
+[*]Linguagem natural e informal, mantendo a voz dos autores.
+[*]Nomes de personagens, lugares e títulos de músicas mantidos como no original.
+[*]Instalador automático: acha o jogo na Steam, faz backup e aplica a tradução.
+[*]O pacote [b]não traz arquivos do jogo[/b]: ele aplica o texto traduzido no arquivo que já está no seu computador.
+[*]Remoção em um clique, voltando os arquivos originais.
+[/list]
+
+[size=4][b]Como instalar[/b][/size]
+[list=1]
+[*]Baixe e extraia o ZIP numa pasta qualquer (não rode de dentro do ZIP).
+[*]Feche o jogo.
+[*]Dê dois cliques em [b]INSTALAR-TRADUCAO.cmd[/b] e espere aparecer [i]INSTALACAO CONCLUIDA[/i] (1 a 2 minutos).
+[*]No jogo: [b]Configurações > Idioma > "Español"[/b]. Depois de escolhida, a opção passa a aparecer como "Português (BR)".
+[/list]
+
+[size=4][b]Como remover[/b][/size]
+Dê dois cliques em [b]REMOVER-TRADUCAO.cmd[/b], ou use na Steam: [i]Propriedades > Arquivos instalados > Verificar integridade dos arquivos[/i].
+
+[size=4][b]Compatibilidade[/b][/size]
+Versão Steam, build [b]25778956[/b]. Se o jogo atualizar, o instalador avisa e não altera nada. Nesse caso, aguarde uma nova versão da tradução.
+
+[size=4][b]Observações[/b][/size]
+[list]
+[*]A tradução ocupa o lugar do idioma Espanhol.
+[*]Algumas maiúsculas acentuadas (Ã, Ç, Â, Ô) podem aparecer com outra fonte, porque a fonte do jogo não tem esses caracteres.
+[*]O Windows pode mostrar um aviso do SmartScreen no .exe: clique em "Mais informações" > "Executar assim mesmo".
+[*]Os backups ficam em %LOCALAPPDATA%\ZeroParades-Traducao-PTBR. Não apague essa pasta enquanto a tradução estiver instalada.
+[/list]
+
+[size=4][b]Créditos[/b][/size]
+Tradução de fã, sem relação com a ZA/UM. Feita com auxílio de IA (Claude e ChatGPT) e revisada.
+Encontrou um erro de tradução? Comente na aba Posts com um print da tela.

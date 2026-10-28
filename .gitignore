@@ -1,0 +1,32 @@
+# Repositorio so com a traducao pt-BR. Tudo e ignorado por padrao; o que entra e liberado abaixo.
+# Fica de fora: arquivos do jogo (bundles, catalogo, texto original em ingles/espanhol), builds e o mod pessoal de habilidades.
+/*
+!/.gitignore
+!/README.md
+!/GLOSSARIO.md
+
+!/tools/
+/tools/*
+!/tools/build.py
+!/tools/extract.py
+!/tools/step.py
+!/tools/dump_batch.py
+!/tools/zip_batch.py
+!/tools/flows.py
+!/tools/install.py
+!/tools/restore.py
+
+!/work/
+/work/*
+!/work/pt/
+/work/pt/*
+!/work/pt/main.json
+
+!/pacote/
+!/release/
+/release/*
+!/release/DESCRICAO-NEXUS.txt
+!/release/DESCRICAO-NEXUS-BBCODE.txt
+!/release/TUTORIAL-NEXUS.md
+
+__pycache__/
