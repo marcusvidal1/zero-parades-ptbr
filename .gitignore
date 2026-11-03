@@ -15,6 +15,7 @@
 !/tools/flows.py
 !/tools/install.py
 !/tools/restore.py
+!/tools/empacotar.py
 
 !/work/
 /work/*

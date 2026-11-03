@@ -2,20 +2,26 @@
 
 Tradução completa de [b]ZERO PARADES: Director's Cut[/b] para o português do Brasil: diálogos, pensamentos, missões, itens, menus e configurações ([b]73.708 textos[/b]).
 
+[size=4][b]Download pelo Google Drive[/b][/size]
+O arquivo aqui no Nexus ainda está em análise pela moderação e, por enquanto, não dá para baixar. Enquanto isso, subi a mesma versão (1.1.1, já compatível com a versão nova do jogo) no Google Drive:
+[url=https://drive.google.com/drive/folders/1ORiZSjfAXxIY_RjkTYJUmY0er_EU2yai]https://drive.google.com/drive/folders/1ORiZSjfAXxIY_RjkTYJUmY0er_EU2yai[/url]
+Na pasta tem o ZIP da tradução e um LEIA-PRIMEIRO com o passo a passo.
+
 [size=4][b]Destaques[/b][/size]
 [list]
 [*]Linguagem natural e informal, mantendo a voz dos autores.
 [*]Nomes de personagens, lugares e títulos de músicas mantidos como no original.
-[*]Instalador automático: acha o jogo na Steam, faz backup e aplica a tradução.
-[*]O pacote [b]não traz arquivos do jogo[/b]: ele aplica o texto traduzido no arquivo que já está no seu computador.
+[*]Instalador automático: acha o jogo na Steam, faz backup e aplica a tradução em poucos segundos.
+[*][b]Sem .exe e sem Python[/b]: usa scripts do PowerShell do próprio Windows, em texto aberto, que qualquer um pode ler.
+[*]Confere cada arquivo antes e depois de instalar, e não baixa nada da internet.
 [*]Remoção em um clique, voltando os arquivos originais.
 [/list]
 
 [size=4][b]Como instalar[/b][/size]
 [list=1]
-[*]Baixe e extraia o ZIP numa pasta qualquer (não rode de dentro do ZIP).
+[*]Baixe o arquivo e extraia o ZIP numa pasta qualquer (botão direito > "Extrair tudo..."; não rode de dentro do ZIP).
 [*]Feche o jogo.
-[*]Dê dois cliques em [b]INSTALAR-TRADUCAO.cmd[/b] e espere aparecer [i]INSTALACAO CONCLUIDA[/i] (1 a 2 minutos).
+[*]Dê dois cliques em [b]INSTALAR-TRADUCAO.cmd[/b] e espere aparecer [i]INSTALACAO CONCLUIDA[/i].
 [*]No jogo: [b]Configurações > Idioma > "Español"[/b]. Depois de escolhida, a opção passa a aparecer como "Português (BR)".
 [/list]
 
@@ -23,13 +29,14 @@ Tradução completa de [b]ZERO PARADES: Director's Cut[/b] para o português do 
 Dê dois cliques em [b]REMOVER-TRADUCAO.cmd[/b], ou use na Steam: [i]Propriedades > Arquivos instalados > Verificar integridade dos arquivos[/i].
 
 [size=4][b]Compatibilidade[/b][/size]
-Versão Steam, build [b]25778956[/b]. Se o jogo atualizar, o instalador avisa e não altera nada. Nesse caso, aguarde uma nova versão da tradução.
+Versão Steam, build [b]26138821[/b] (versão 1.1.40910). Se o jogo atualizar, o instalador avisa e não altera nada. Nesse caso, aguarde uma nova versão da tradução.
 
 [size=4][b]Observações[/b][/size]
 [list]
 [*]A tradução ocupa o lugar do idioma Espanhol.
 [*]Algumas maiúsculas acentuadas (Ã, Ç, Â, Ô) podem aparecer com outra fonte, porque a fonte do jogo não tem esses caracteres.
-[*]O Windows pode mostrar um aviso do SmartScreen no .exe: clique em "Mais informações" > "Executar assim mesmo".
+[*]Se o Windows avisar ao abrir o .cmd, clique em "Mais informações" > "Executar assim mesmo".
+[*]Se aparecer "Sem permissao", clique com o botão direito no .cmd > Executar como administrador.
 [*]Os backups ficam em %LOCALAPPDATA%\ZeroParades-Traducao-PTBR. Não apague essa pasta enquanto a tradução estiver instalada.
 [/list]
 

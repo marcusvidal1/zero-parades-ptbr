@@ -1,3 +1,4 @@
 @echo off
-cd /d "%~dp0"
-"runtime\python.exe" -X utf8 instalador_ptbr.py instalar
+title ZERO PARADES - Instalar traducao PT-BR
+powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File "%~dp0scripts\instalar.ps1" -Interativo
+exit /b %ERRORLEVEL%

@@ -1,3 +1,4 @@
 @echo off
-cd /d "%~dp0"
-"runtime\python.exe" -X utf8 instalador_ptbr.py remover
+title ZERO PARADES - Remover traducao PT-BR
+powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File "%~dp0scripts\remover.ps1" -Interativo
+exit /b %ERRORLEVEL%

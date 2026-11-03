@@ -2,31 +2,21 @@ TÍTULO
 ZERO PARADES - Tradução Português (Brasil)
 
 RESUMO (curto)
-Tradução completa de ZERO PARADES: Director's Cut para português do Brasil, com instalador automático e remoção em um clique.
+Tradução completa de ZERO PARADES: Director's Cut para português do Brasil. Instala e remove com dois cliques, sem .exe. Se a tradução te ajudar, deixe um comentário ou um endorse, faz toda a diferença! :)
 
-DESCRIÇÃO
-Tradução completa do jogo para o português brasileiro: diálogos, pensamentos, missões, itens, menus e configurações (73.708 textos).
+DESCRIÇÃO DA PÁGINA
+Use o DESCRICAO-NEXUS-BBCODE.txt (já formatado).
 
-- Linguagem natural e informal, mantendo a voz dos autores.
-- Nomes de personagens, lugares e títulos de músicas mantidos como no original.
-- Instalador automático: acha o jogo na Steam, faz backup e aplica a tradução.
-- O pacote não traz arquivos do jogo: ele aplica o texto traduzido no arquivo que já está no seu computador.
-- Remoção em um clique, voltando os arquivos originais.
+ARQUIVO (aba Files, Main files, Primary)
+ZeroParades-Traducao-PTBR-1.1.1.zip
+   File name: PT-BR - Instalador (build 26138821)
+   Version: 1.1.1
+   Description (máx. 255 caracteres): Sem .exe e sem Python (scripts PowerShell). Extraia o ZIP, feche o jogo e rode INSTALAR-TRADUCAO.cmd; REMOVER-TRADUCAO.cmd desfaz. Compatível com o build Steam 26138821 (versão 1.1.40910).
 
-COMO INSTALAR
-1. Extraia o ZIP numa pasta.
-2. Feche o jogo e dê dois cliques em INSTALAR-TRADUCAO.cmd.
-3. No jogo: Configurações > Idioma > "Español" (passa a aparecer como "Português (BR)").
+Os arquivos antigos (1.0.1, 1.0.0 e 1.0) não funcionam no jogo atualizado: mova para "Old files" ou apague.
 
-Para remover: REMOVER-TRADUCAO.cmd, ou "Verificar integridade dos arquivos" na Steam.
-
-COMPATIBILIDADE
-Versão Steam, build 25778956. Se o jogo atualizar, o instalador avisa e não altera nada. Aguarde uma nova versão da tradução.
-
-OBSERVAÇÕES
-- A tradução ocupa o lugar do idioma Espanhol.
-- Algumas maiúsculas acentuadas (Ã, Ç, Â, Ô) podem aparecer com outra fonte.
-- O Windows pode mostrar um aviso do SmartScreen no .exe: "Mais informações" > "Executar assim mesmo".
+CHANGELOG 1.1.1
+Atualizado para o build Steam 26138821 (versão 1.1.40910 do jogo). A tradução é a mesma. Agora existe só o instalador em PowerShell, sem .exe e sem Python.
 
 CRÉDITOS / AVISO
 Tradução de fã, sem relação com a ZA/UM. Feita com auxílio de IA (Claude e ChatGPT) e revisada.

@@ -1,12 +1,12 @@
 ZERO PARADES: Director's Cut - Tradução Português (Brasil)
-Versão 1.0.1
+Versão 1.1.1
 
 Tradução completa do jogo (73.708 textos): diálogos, pensamentos, missões, itens,
 menus e configurações.
 
 COMPATIBILIDADE
-- Versão Steam do jogo (build 25778956).
-- O instalador confere se o arquivo de textos do jogo é exatamente o desta versão.
+- Versão Steam do jogo (build 26138821, versão 1.1.40910).
+- O instalador confere se os arquivos do jogo são exatamente os desta versão.
   Se a Steam atualizar o jogo, ou se houver outro mod mexendo nos textos, ele avisa
   e não altera nada.
 
@@ -14,7 +14,7 @@ COMO INSTALAR
 1. Extraia o ZIP inteiro numa pasta normal (não rode de dentro do ZIP).
 2. Feche o jogo.
 3. Dê dois cliques em INSTALAR-TRADUCAO.cmd.
-4. Espere a mensagem INSTALACAO CONCLUIDA (leva 1 ou 2 minutos).
+4. Espere a mensagem INSTALACAO CONCLUIDA.
 5. Abra o jogo, vá em Configurações > Idioma e escolha "Español".
    Depois de escolhida, a opção passa a aparecer como "Português (BR)".
 
@@ -22,28 +22,32 @@ COMO REMOVER
 1. Feche o jogo.
 2. Dê dois cliques em REMOVER-TRADUCAO.cmd.
 
+Tinha uma versão antiga da tradução? Quando a Steam atualizou o jogo, ela já voltou
+os arquivos originais. É só instalar esta versão normalmente.
+
 Se o jogo não estiver numa biblioteca padrão da Steam, o instalador pergunta a pasta.
-Você também pode informar direto, por exemplo:
-  runtime\python.exe -X utf8 instalador_ptbr.py instalar --jogo "D:\SteamLibrary\steamapps\common\Zero Parades"
+Você também pode informar direto, abrindo o PowerShell na pasta extraída:
+  powershell -ExecutionPolicy Bypass -File .\scripts\instalar.ps1 -Jogo "D:\SteamLibrary\steamapps\common\Zero Parades" -Interativo
 
 O QUE O INSTALADOR FAZ
 - Não baixa nada da internet e não envia nada.
-- Não tem .exe próprio: usa o Python portátil oficial (pasta runtime, baixado de
-  python.org e assinado digitalmente pela Python Software Foundation) para rodar o
-  script instalador_ptbr.py, que é texto aberto e pode ser lido por qualquer um.
+- Não tem .exe nem usa Python: são scripts do PowerShell do próprio Windows (pasta
+  scripts), em texto aberto, que qualquer um pode ler.
+- Confere o SHA-256 de cada arquivo antes e depois de copiar.
 - Faz backup antes de mudar qualquer arquivo, em:
   %LOCALAPPDATA%\ZeroParades-Traducao-PTBR
   Não apague essa pasta enquanto a tradução estiver instalada.
-- Altera só dois arquivos do jogo: o pacote de textos (a tradução entra no lugar do
-  Espanhol) e o catalog.bin (para o jogo aceitar o pacote alterado).
-- O pacote de mod NÃO traz arquivos do jogo: ele aplica o texto traduzido no arquivo
-  que já está no seu computador.
+- Altera só dois arquivos do jogo, trocando pelos da pasta payload: o pacote de
+  textos (a tradução entra no lugar do Espanhol) e o catalog.bin (para o jogo
+  aceitar o pacote alterado).
 
 SE ALGO DER ERRADO
 - Rode REMOVER-TRADUCAO.cmd, ou use na Steam: Propriedades > Arquivos instalados >
   Verificar integridade dos arquivos. Isso volta tudo ao original.
 - Se o Windows avisar ao abrir o .cmd, clique em "Mais informações" > "Executar
   assim mesmo" (ou em "Executar").
+- Se aparecer "Sem permissao", clique com o botão direito no .cmd > Executar como
+  administrador.
 
 OBSERVAÇÕES
 - Nomes de personagens, lugares e títulos de músicas foram mantidos como no original.

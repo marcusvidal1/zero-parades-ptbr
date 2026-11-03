@@ -9,10 +9,10 @@ Os atalhos INSTALAR-TRADUCAO.cmd e REMOVER-TRADUCAO.cmd fazem isso. runtime\\ e 
 Sem argumentos, mostra um menu."""
 import hashlib, json, os, shutil, struct, sys, traceback
 
-VERSAO_PACOTE = "1.0.1"
-BUILD_STEAM = "25778956"  # buildid da Steam em que a traducao foi testada
-BUNDLE = "g5ibkj7vdwf2g67g_assets_all_7de35702cafaf3b47f772481acd859f2.bundle"
-BUNDLE_ORIGINAL_SHA256 = "dcca208d631a088d3afcc0c94f77c0e7aabab866aa7fc181ea967dd63de2a88d"
+VERSAO_PACOTE = "1.1"
+BUILD_STEAM = "26138821"  # buildid da Steam em que a traducao foi testada
+BUNDLE = "g5ibkj7vdwf2g67g_assets_all_9eb206f8e0ca7a9202649e6666b53149.bundle"
+BUNDLE_ORIGINAL_SHA256 = "df33c3a7f081e6ed7bca3d19620420a4d90cd677428be32e9e31e16fda9f0ab1"
 TABELA = "es_mxLocalizationTable"
 PASTA_APP = os.path.join(os.environ.get("LOCALAPPDATA", os.path.expanduser("~")), "ZeroParades-Traducao-PTBR")
 PASTA_BACKUP = os.path.join(PASTA_APP, "backup")

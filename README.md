@@ -2,7 +2,7 @@
 
 Tradução de fã completa do jogo (73.708 textos): diálogos, pensamentos, missões, itens, menus e configurações. A tradução ocupa o lugar do idioma Espanhol (`es_mx`) no jogo.
 
-Publicada no Nexus Mods: https://www.nexusmods.com/zeroparadesfordeadspies/mods/21
+Publicada no Nexus Mods: https://www.nexusmods.com/zeroparadesfordeadspies/mods/22
 
 Tradução de fã, sem relação oficial com a ZA/UM. Feita com auxílio de IA (Claude e ChatGPT/Codex) e revisada. Este repositório **não** contém arquivos do jogo.
 
@@ -29,11 +29,11 @@ Os textos ficam no bundle `ZeroParades_Data/StreamingAssets/aa/StandaloneWindows
 
 `instalador_ptbr.py` acha o jogo pelas bibliotecas da Steam, confere o SHA-256 do bundle original (recusa outra versão do jogo), faz backup em `%LOCALAPPDATA%\ZeroParades-Traducao-PTBR`, aplica `dados/traducao-ptbr.json` na tabela `es_mx` e zera o CRC no catálogo.
 
-Desde a 1.0.1 o pacote não tem `.exe` próprio (o da 1.0.0, feito com PyInstaller, dava falso positivo em antivírus). Ele leva, numa pasta `runtime\`:
-- o Python portátil oficial `python-3.12.10-embed-amd64.zip` (python.org, assinado pela Python Software Foundation);
-- em `runtime\Lib\site-packages`, as bibliotecas usadas: `UnityPy`, `PIL`, `lz4`, `brotli.py` + `_brotli*.pyd`, `fsspec`, `attr`, `attrs`;
-- `runtime\python312._pth` com as linhas `python312.zip`, `.` e `Lib\site-packages`.
+Desde a 1.0.1 o pacote do Nexus não leva Python nem `.exe` (a 1.0.0 tinha um `.exe` do PyInstaller e a 1.0 um Python portátil; os dois caíam na quarentena do Nexus). Ele leva:
+- `payload\`: o bundle de textos e o `catalog.bin` já traduzidos, gerados pelo próprio `instalador_ptbr.py`;
+- `manifest.json`: SHA-256 de cada arquivo original e traduzido;
+- `scripts\instalar.ps1` / `remover.ps1` (+ `comum.ps1`), chamados pelos `.cmd`. Conferem os hashes, copiam e restauram com o mesmo backup e `estado.json` do instalador Python, então um desfaz o que o outro instalou.
 
-Os atalhos `.cmd` rodam `runtime\python.exe -X utf8 instalador_ptbr.py instalar|remover`. O zip leva `INSTALAR-TRADUCAO.cmd`, `REMOVER-TRADUCAO.cmd`, `LEIA-ME.txt`, `instalador_ptbr.py`, `dados\` e `runtime\`.
+Para gerar: `build_py\ZeroParades-Traducao-PTBR\runtime\python.exe -X utf8 tools\empacotar.py backup\build-<buildid>` (qualquer Python com UnityPy serve; a pasta tem o bundle e o `catalog.bin` originais daquele build). Sai em `build_ps\` e `release\ZeroParades-Traducao-PTBR-<versão>.zip`.
 
-Quando a Steam atualizar o jogo: rode o `extract.py` no bundle novo, ajuste `BUNDLE`, `BUNDLE_ORIGINAL_SHA256` e `BUILD_STEAM` no instalador, refaça o build e exporte de novo `pacote/dados/traducao-ptbr.json` a partir do bundle montado.
+Quando a Steam atualizar o jogo: copie o bundle de textos e o `catalog.bin` originais para `backup\build-<buildid>\`, rode o `extract.py` no bundle novo e compare com o inglês anterior; ajuste `BUNDLE`, `BUNDLE_ORIGINAL_SHA256` e `BUILD_STEAM` no instalador e `VERSAO` no `empacotar.py`, e gere o pacote. Na atualização para o build 26138821 (versão 1.1.40910) a tabela `es_mx` não mudou, então o `traducao-ptbr.json` ficou igual.
